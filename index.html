@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card-container">
+            <!-- Front Card -->
+            <div class="card front">
+                <div class="card-info">
+                    <h1 class="heading bank-name">Bank Name</h1>
+                    <h1 class="heading logo">Logo Here</h1>
+                    <div class="arrow"></div>
+                    <img src="https://img.icons8.com/fluency/344/sim-card-chip.png" alt="" class="chip">
+                    <p class="card-text card-number">0123 2345 5678 9000</p>
+                    <p class="card-text valid-date">
+                        <span>Valid <br>Date</span>
+                        <span class="date"> 07/22 </span>
+                    </p>
+
+                    <h1 class="heading owner-name">Owner Name</h1>
+
+                    <div class="card-type card-type1"></div>
+                    <div class="card-type card-type2"></div>
+                </div>
+            </div>
+            <div class="card back">
+                <div class="card-info">
+                    <div class="black-line"></div>
+                    <div class="bar-code">
+                        <span class="bar">
+                            <hr>
+                            <hr>
+                            <hr>
+                            <hr>
+                            <hr>
+                            <hr>
+                            <hr>
+                            <hr>
+                            <hr>
+                            <hr>
+                            <hr>
+                            <hr>
+
+                            <hr>
+                            <hr>
+                            <hr>
+                            <hr>
+                        </span>
+                        <span class="code">xxx</span>
+                    </div>
+                    <div class="term">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus voluptate, cupiditate
+                            itaque doloribus iste sunt eum ratione recusandae, accusamus nihil nobis sit repellendus
+                            dolorum modi velit eligendi dolorem quo ipsum.</p>
+
+                        <br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, minus?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-container">
+            <form action="">
+                <label for="fname">Bank Name</label>
+                <input type="text" name="fname" id="bank-name">
+
+                <label for="fname">Owner Name</label>
+                <input type="text" name="fname" id="owner-name">
+
+                <label for="fname">Card Number</label>
+                <input type="text" name="fname" maxlength="16" id="card-number">
+
+                <div class="input-wrap">
+                    <div class="half">
+                        <label for="fname">MM / YY</label>
+                        <input type="text" name="date" maxlength="4" id="validate">
+                    </div>
+
+                    <div class="half">
+                        <label for="fname">CVC Code</label>
+                        <input type="text" name="cvc" maxlength="3" id="cvc-code">
+                    </div>
+
+                </div>
+                <button class="pay-now">pay now</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

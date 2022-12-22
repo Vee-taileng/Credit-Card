@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f1f1;
+    font-family: sans-serif;
+}
+
+.container {
+    max-width: 1090px;
+    margin: auto;
+    padding: 5px;
+}
+
+.card-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(auto, 360px));
+    justify-content: center;
+    gap: 10px;
+    color: #fff;
+}
+
+.card {
+    height: 220px;
+    background-color: aqua;
+    border-radius: 10px;
+    background-image: linear-gradient(to right bottom, #040382, #50bdfc, #040382);
+    box-shadow: 1px 1px 1px #333;
+    position: relative;
+}
+
+.heading {
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 700;
+    text-shadow: 1px 1px 1px #333;
+}
+
+.bank-name {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.logo {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.arrow {
+    border: 15px solid;
+    border-color: transparent #fff transparent transparent;
+    position: absolute;
+    left: 20px;
+    top: 33%;
+
+}
+
+.chip {
+    position: absolute;
+    width: 65px;
+    height: auto;
+    top: 25%;
+    left: 50px;
+    z-index: 100;
+}
+
+.card-number {
+    position: absolute;
+    width: 100%;
+    top: 55%;
+    text-align: center;
+    letter-spacing: 5px;
+    text-shadow: 1px 0px 1px #333;
+}
+
+.valid-date {
+    position: absolute;
+    top: 70%;
+    left: 33%;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+.valid-date span {
+    margin: 0px 5px;
+}
+
+.valid-date span.date {
+    letter-spacing: 2px;
+    font-size: 16px;
+}
+
+.owner-name {
+    position: absolute;
+    bottom: 5%;
+    left: 30px;
+    letter-spacing: 3px;
+    font-weight: 400;
+    font-size: 16px;
+    text-shadow: 1px 0px 2px #000;
+    text-transform: uppercase;
+    font-style: normal;
+}
+
+.card-type {
+    position: absolute;
+    bottom: 5%;
+    right: 52px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.card-type1 {
+    z-index: 10;
+}
+
+.card-type2 {
+    background-color: gold;
+    right: 30px;
+}
+
+.black-line {
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    height: 40px;
+    background-color: #000;
+}
+
+.bar-code {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin-top: 80px;
+}
+
+.bar-code span {
+    height: 34px;
+    background-color: #ddd;
+
+}
+
+.bar-code .bar {
+    flex-grow: 1;
+    width: 90%;
+}
+
+.bar-code .code {
+    width: 35px;
+    background-color: #fff;
+    color: #000;
+    height: 25px;
+    padding: 4px;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.term {
+    padding: 10px;
+}
+
+.term p {
+    font-size: 10px;
+}
+
+@media screen and (max-width: 745px) {
+    .card-container {
+        grid-template-columns: repeat(1, minmax(auto, 360px));
+    }
+}
+
+.form-container {
+    max-width: 360px;
+    margin: auto;
+    padding: 10px 0px;
+}
+
+.form-container input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #b8b8b8;
+    background-color: transparent;
+    outline: none !important;
+    font-size: 1.3rem;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.form-container label {
+    display: block;
+    color: #b8b8b8;
+    margin-top: 15px;
+}
+
+.input-wrap {
+    display: flex;
+
+}
+
+.pay-now {
+    width: 100%;
+    margin-top: 20px;
+    padding: 18px;
+    font-size: 16px;
+    text-transform: uppercase;
+    border: none;
+    background-color: #5d90e2;
+    border-radius: 10px;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* .form-container input[name="date"],
+.form-container input[name="cvc"] {
+    border: none;
+} */
